@@ -19,3 +19,8 @@ Route::get('/', function () {
 });
 
 Route::post('/load-table',[UserController::class,'index'])->name('load-table');
+Route::post('/save-data',[UserController::class,'store'])->name('store-data');
+Route::post('/delete-data',[UserController::class,'delete'])->name('delete-data');
+Route::post('/load-update-form',[UserController::class,'updateform'])->name('load-update-form');
+Route::post('/update-data',[UserController::class,'update'])->name('update-data');
+Route::post('/search-data',[UserController::class,'search'])->name('search-data');
