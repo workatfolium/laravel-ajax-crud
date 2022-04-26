@@ -47,7 +47,7 @@
 <script type="text/javascript">
         $(document).ready(function() {
     function loadTable() {
-        var url = '{{ route("load-table") }}';
+        var url = '{{ route("users.load-table") }}';
         $.ajax({
             url: url,
             type: 'POST',
@@ -73,7 +73,7 @@
             $("#error-message").html("All fields are required.").slideDown();
             $("#success-message").slideUp();
         } else {
-            var url = '{{ route("store-data") }}';
+            var url = '{{ route("users.store-data") }}';
             $.ajax({
                 url: url,
                 type: 'POST',
@@ -101,7 +101,7 @@
         if (confirm("Do you really want to delete this record ?")) {
             var studentId = $(this).data("id");
             var element = this;
-            var url = '{{ route("delete-data") }}';
+            var url = '{{ route("users.delete-data") }}';
             $.ajax({
                 url: url,
                 type: "POST",
@@ -124,7 +124,7 @@
         e.preventDefault();
         $("#modal").show();
         var studentId = $(this).data("eid");
-        var url = '{{ route("load-update-form") }}';
+        var url = '{{ route("users.load-update-form") }}';
         $.ajax({
             url: url,
             type: "POST",
@@ -146,7 +146,7 @@
         var stuId = $("#edit-id").val();
         var fname = $("#edit-fname").val();
         var lname = $("#edit-lname").val();
-        var url = '{{ route("update-data") }}';
+        var url = '{{ route("users.update-data") }}';
         $.ajax({
             url: url,
             type: "POST",
@@ -167,7 +167,7 @@
     jQuery(document).on('keyup', '#search', function(e) {
         e.preventDefault();
         var search_term = $(this).val();
-        var url = '{{ route("search-data") }}';
+        var url = '{{ route("users.search-data") }}';
         $.ajax({
             url: url,
             type: "POST",

@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
+    public function users(Request $request){
+        return view('welcome');
+    }
     public function index(Request $request)
     {
         $users = Test::all();
