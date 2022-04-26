@@ -1,7 +1,7 @@
-## Step - 1
+**Step - 1**
 Download or clone the repository in your system.
 
-## Step - 2
+**Step - 2**
 Go to laravel-ajax-crud folder and open terminal then run below command:
 
 *Install or Update Composer:*
