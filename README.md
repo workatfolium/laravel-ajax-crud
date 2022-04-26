@@ -1,5 +1,5 @@
 ## Step - 1
-Download or clone the repository in your syetem.
+Download or clone the repository in your system.
 
 ## Step - 2
 go to laravel-ajax-crud folder and open terminal then run below command:
