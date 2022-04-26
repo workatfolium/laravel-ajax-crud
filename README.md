@@ -46,4 +46,6 @@ php artisan optimize
 php artisan serve
 ```
 
-Then hit http://127.0.0.1:8000/users you project will be run.
+*Then Visit:*
+
+http://127.0.0.1:8000/users
