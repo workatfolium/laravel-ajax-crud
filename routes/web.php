@@ -14,8 +14,9 @@ use App\Http\Controllers\UserController;
 |
 */
 
+Route::get('/',[UserController::class,'users']);
+
 Route::group(['prefix' => 'users', 'as' => 'users'], function () {
-    Route::get('/',[UserController::class,'users']);
     Route::post('/load-table', [UserController::class,'index'])->name('.load-table');
     Route::post('/save-data', [UserController::class,'store'])->name('.store-data');
     Route::post('/delete-data',[UserController::class,'delete'])->name('.delete-data');

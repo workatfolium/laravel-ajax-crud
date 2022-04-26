@@ -47,4 +47,4 @@ php artisan serve
 
 *Then Visit:*
 
-http://127.0.0.1:8000/users
+http://127.0.0.1:8000/
