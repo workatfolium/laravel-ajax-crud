@@ -1,6 +1,7 @@
-*Download or clone the repository in your system.*
+**1)***Download or clone the repository in your system.*
 
-*Go to laravel-ajax-crud folder and open terminal then follow below steps.*
+**2)***Go to laravel-ajax-crud folder and open terminal then follow below steps.*
+
 
 *Install or Update Composer:*
 ```
