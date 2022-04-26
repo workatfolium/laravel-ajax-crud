@@ -46,11 +46,4 @@ php artisan optimize
 php artisan serve
 ```
 
-<<<<<<< HEAD
 Then hit http://127.0.0.1:8000/users you project will be run.
-=======
-Then hit http://127.0.0.1:8000/users you project will be run...
-
-# Add on
-performing crud operations with more fields..like checkboxes , drop downs , radios , image upload...
->>>>>>> baca67e4733e357f95f0d8d88108558e08c10501
