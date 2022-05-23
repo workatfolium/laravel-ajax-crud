@@ -9,7 +9,7 @@ git clone https://github.com/workatfolium/laravel-ajax-crud.git
 
 *Install or Update Composer:*
 ```
-composer install/composer update
+composer update
 ```
 
 *Make a copy of .env.example file to .env:*
