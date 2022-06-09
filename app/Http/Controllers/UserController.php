@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     public function users(Request $request){
+        $ids = Test::query()->pluck('id');
+        $leads = Test::query()->whereIn('id', $ids)->get();
         return view('welcome');
     }
     public function index(Request $request)
