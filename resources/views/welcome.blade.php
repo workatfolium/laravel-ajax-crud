@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Laravel & Ajax CRUD Application</title>
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+    <link href="{{ asset('/pace-master/themes/blue/pace-theme-flash.css') }}" rel="stylesheet" />
 </head>
 <body>
     <table id="main" border="0" cellspacing="0">
@@ -44,8 +45,10 @@
         </div>
     </div>
 <script type="text/javascript" src="{{ asset('/js/jquery.js') }}"></script>
+<script src="{{ asset('/pace-master/pace.js') }}"></script>
 <script type="text/javascript">
         $(document).ready(function() {
+
     function loadTable() {
         var url = '{{ route("users.load-table") }}';
         $.ajax({
